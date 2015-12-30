@@ -1,12 +1,12 @@
 ---
 layout: post
-title : "\"The Death of Agile\". L'agilité peut-elle survivre ?"
+title : "\"The Death of Agile\" : l'agilité est elle en danger ?"
 author: Olivier Lemaitre
 categories: Agile
 ---
 
 Pour Allen Holub, un consultant indépendant de la sillicon valley, les pratiques agiles 
-ne peuvent pas survivre dans nos grandes entreprises. Elles sont condamnées à mourrir si
+ne peuvent pas survivre dans les grandes entreprises. Elles sont condamnées à mourrir si
 on ne change pas des choses importantes dans la culture et l'organisation de celles-ci. 
 Cet article reprend ses arguments. Ils ont été exposés aux conférences <i>Software Architect London</i> en 2014 <a href='#footnote'>[1]</a>.
 

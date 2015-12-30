@@ -1,6 +1,6 @@
 ---
 layout: post
-title : La révolution du nuage informatique
+title : Qu'est ce que le "cloud computing" ?
 author: Olivier Lemaitre
 categories: Agile
 ---
