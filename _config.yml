@@ -8,7 +8,7 @@ relative_permalinks: true
 
 # Setup
 title:            welcloud.io
-description:      'Ce blog est consacré au cloud computing, à l''ingénierie logielle et aux pratiques agiles.'
+description:      'Ce blog est consacré au cloud computing, à l''ingénierie logicielle et aux pratiques agiles.'
 baseurl:          /
 baseurl_fortwitter: http://welcloud.io
 
