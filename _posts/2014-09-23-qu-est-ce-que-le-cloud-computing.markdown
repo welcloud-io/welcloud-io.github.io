@@ -2,7 +2,7 @@
 layout: post
 title : Qu'est ce que le "cloud computing" ?
 author: Olivier Lemaitre
-categories: Agile
+categories: Cloud
 ---
 
 Le nuage informatique réduit drastiquement le coût de stockage, d’échange et de traitement de l'information. 
