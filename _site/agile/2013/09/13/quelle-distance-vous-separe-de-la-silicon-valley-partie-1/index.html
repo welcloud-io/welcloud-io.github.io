@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!--title>
+    
+      Quelle distance vous sépare de la Silicon Valley ? (Partie 1) &middot; welcloud.io
+    
+  </title-->
+
+  <title>welcloud.io</title>  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">  
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">  
+
+  <!-- Icons -->
+  <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png"-->
+  <!--link rel="shortcut icon" href="/public/favicon.ico"-->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <!--h1>
+        <a href="/">
+          welcloud.io
+        </a>
+      </h1--> 
+      <a href="/">      
+        <img src="/images/welcloud-logo.png">
+      </a>
+
+      <h2 style="text-align:center">
+      <a type="button" class="" href="http://twitter.com/o_lemaitre">
+        <i class="fa fa-twitter"></i> @o_lemaitre
+      </a>
+      </h2>
+      <p class="lead">Ce blog est consacré au cloud computing, à l'ingénierie logielle et aux pratiques agiles.</p>      
+    </div>
+
+    <nav class="sidebar-nav">
+
+      
+
+      
+      
+        
+      
+        
+      
+        
+      
+
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Quelle distance vous sépare de la Silicon Valley ? (Partie 1)</h1>
+  <span class="post-date">13 Sep 2013</span>
+  <p>Personne ne peut contester la suprématie des géants de la Silicon Valley (Google, Amazon, Facebook, etc). 
+Un succès qui est fortement lié à la maitrise qu&#39;ils ont de l&#39;outil informatique.
+Mais comment font-ils pour atteindre cette efficacité ? Quelles méthodes utilisent-ils ? Nos entreprises en sont-elles si éloignées  ?
+Vous trouverez ici des pistes de réponses inspirées du livre : « Les Géants du Web »<a href='#footnote'>[1]</a>.</p>
+
+<p>Pour commencer les géants du web construisent eux-même leurs logiciels pour les raisons suivantes :</p>
+
+<ul>
+<li><p>c&#39;est leur cœur de métier, ils ne peuvent donc pas laisser à des tiers ce qui permet de les distinguer de la concurrence.</p></li>
+<li><p>le trafic qu’ils doivent absorber (i.e. le volume de transactions à exécuter en simultané) est énorme. 
+Or les logiciels vendus sur étagère (les progiciels) sont souvent « hyper-génériques » pour pouvoir s’adapter à différents contextes, donc peu performants. 
+En fabriquant leurs logiciels ils peuvent optimiser les performances dont l&#39;expérience utilisateur dépend. Quelques dixièmes de seconde de latence 
+dans le chargement des pages peuvent réduire significativement leur chiffre d&#39;affaires.</p></li>
+<li><p>le coût des progiciels augmente avec la puissance nécessaire à leur exécution (certains progiciels sont facturés au cœur de processeur par exemple). 
+Avec des logiciels « faits maison » ou open source le problème ne se pose pas. Les géants du web contribuent d&#39;ailleurs beaucoup au logiciel libre.</p></li>
+</ul>
+
+<p>Néanmoins, construire des logiciels est un art difficile. 
+Pour cette raison ils recrutent des développeurs d&#39;un très bon niveau. 
+Ils les forment, leur donnent une grande autonomie, un cadre de travail agréable et une forte rémunération. 
+En contrepartie on leur demande une qualité extrême du code, gage de souplesse et de fiabilité.</p>
+
+<p>Pour constituer les équipes, les géants de la silicon valley combinent trois principes d&#39;organisation :</p>
+
+<ul>
+<li><p>l&#39;organisation en « pizza team » ou « équipe pizza ». C&#39;est une équipe qui ne  doit pas dépasser le nombre de personnes que l’on peut nourrir avec 2 pizzas (ce qui correspond à 8 personnes pour des pizzas au format américain). Il est en effet prouvé qu’une équipe est  efficace entre 5 et 12 personnes, en dehors de ces limites des problèmes apparaissent.</p></li>
+<li><p>l&#39;organisation en  « feature team »  ou « équipe fonctionnelle » qui, plutôt que de regrouper les équipes par couches technologiques (e.g.  tous les experts html en front office, tous les experts java en back office, etc), on les regroupe par ensembles fonctionnels cohérents avec un expert de chaque couche dans l’équipe. On évite ainsi de passer du temps à coordonner les couches. Régulièrement les experts des différentes équipes se réunissent pour échanger sur leurs pratiques.</p></li>
+<li><p>l&#39;organisation « devops » qui regroupe les développeurs (qui ont pour objectif d’innover) et les opérationnels (qui ont pour objectif de rationnaliser les coûts). Le but est de les fédérer autour d’un but commun. Il y a donc au moins un opérationnel dans chaque « feature team ».</p></li>
+</ul>
+
+<p>On obtient alors des petites équipes pluridisciplinaires entièrement responsables du bon fonctionnement du service à fournir au client.</p>
+
+<p>Pour faire émerger les meilleures idées ils utilisent :</p>
+
+<ul>
+<li><p>le « Lean Startup » qui permet de mettre rapidement en route un projet ou plutôt un « business ». Il est basé sur la boucle « Build – Mesure – Learn » (Construire – Mesurer – Apprendre). Pour que cela fonctionne il faut une « obsession de la mesure » et savoir collecter toutes les données qui guideront efficacement les décisions.</p></li>
+<li><p>le MVP (« Mininum Viable Product » ou « Produit Minimum Viable »), qui est une technique du « lean startup ». Il doit permettre de valider 
+au plus tôt les hypothèses. Ceci évite de les faire dans une salle de réunion et de se rendre compte après des mois qu’elles sont fausses. 
+En résumé le MVP est une version du produit qui permet à une équipe de collecter à propos du client un maximum d&#39;enseignements validés avec le minimum d’efforts.</p></li>
+</ul>
+
+<p>Pour supporter ces cycles très courts d’amélioration continue ils utilisent des pratiques techniques :</p>
+
+<ul>
+<li><p>le déploiement continu (une extension de l’intégration continue) se fait en production de manière automatisée ou semi-automatisée au 
+minimum 1 fois par jour. Ceci a un double avantage : un « feed back » rapide sur les 
+nouvelles fonctionnalités (donc en phase avec le  « lean startup ») et une correction plus 
+rapide et facile des anomalies. En effet, les petits changements créent de bien plus petits problèmes 
+que les gros changements. A noter que cette pratique nécessite l’automatisation des tests à tous les niveaux (unitaires, intégration, performance, …).</p></li>
+<li><p>le « feature flipping » quant à lui permet de limiter les risques du déploiement continu en permettant d’activer ou de désactiver des fonctionnalités directement en production sans avoir à relivrer du code.</p></li>
+<li><p>Enfin, l’« A/B testing » permet lui aussi d&#39;activer ou désactiver des fonctionnalités pour un groupe d’utilisateurs. Ceci permet d’expérimenter une fonctionnalité en production sans la rendre visible à tous et d’étudier les différents comportements.</p></li>
+</ul>
+
+<p>La société la plus représentative des pratiques ci-dessus est Facebook. 
+Elle automatise énormément ses tests et effectue deux déploiements par jour. 
+Les fonctionnalités qui vont sortir dans plusieurs mois sont déjà en production mais pas toujours visibles 
+par l’utilisateur grâce au « feature flipping » ou l&#39;« A/B testing ».</p>
+
+<p>Enfin l’infrastructure qui supporte leurs logiciels joue un rôle important. Cette thématique fera l’objet d’un <a href="/cloud/2013/09/20/quelle-distance-vous-separe-de-la-silicon-valley-partie-2">autre article</a>.</p>
+
+<p>Les géants du web ont donc choisi d’avoir la main sur leurs logiciels, de recruter de bons développeurs et de les organiser en petites équipes autonomes qui valident rapidement leurs idées en livrant souvent en production. 
+La conséquence c&#39;est tout simplement un meilleur « time to market ».
+Pour savoir si votre entreprise s&#39;en approche, essayez simplement de répondre à cette question : 
+« combien de temps met aujourd’hui votre organisation pour mettre en production la modification d’une seule ligne de code ?», 
+plus la réponse s&#39;éloigne d’une journée plus vous vous éloignez de l’efficacité des géants de la Silicon Valley.</p>
+
+<div class = 'footnote-list'>
+  <div id = 'footnote'>
+    <span>1: </span>
+      <a href="http://www.octo.com/fr/publications/11-les-geants-du-web">« Les géants du web »</a>, par <a href='http://www.octo.com/fr'>Octo Technology</a> (Novembre 2012)
+    
+  </div>
+</div>
+
+</div>
+
+<div>
+  <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=http://welcloud.io/agile/2013/09/13/quelle-distance-vous-separe-de-la-silicon-valley-partie-1/%20via%20&#64;o_lemaitre"
+  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+  <!--svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg-->
+  <i class="fa fa-twitter fa-lg"></i> Twitter
+  </a>
+</div>        
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/cloud/2015/10/23/le-cloud-computing-changera-t-il-la-vie-du-programmeur/">
+            Le Cloud Computing changera-t-il la vie des programmeurs ?
+            <small>23 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/agile/2015/10/12/the-death-of-agile-l-agilite-peut-elle-survivre/">
+            "The Death of Agile". L'agilité peut-elle survivre ?
+            <small>12 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/cloud/2014/12/13/cinq-preconisations-pour-migrer-vos-applications-vers-le-cloud/">
+            Cinq préconisations pour migrer vos applications vers le cloud
+            <small>13 Dec 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68713008-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</html>

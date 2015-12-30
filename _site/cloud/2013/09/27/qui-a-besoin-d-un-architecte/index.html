@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!--title>
+    
+      Qui a besoin d'un architecte ? &middot; welcloud.io
+    
+  </title-->
+
+  <title>welcloud.io</title>  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">  
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">  
+
+  <!-- Icons -->
+  <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png"-->
+  <!--link rel="shortcut icon" href="/public/favicon.ico"-->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <!--h1>
+        <a href="/">
+          welcloud.io
+        </a>
+      </h1--> 
+      <a href="/">      
+        <img src="/images/welcloud-logo.png">
+      </a>
+
+      <h2 style="text-align:center">
+      <a type="button" class="" href="http://twitter.com/o_lemaitre">
+        <i class="fa fa-twitter"></i> @o_lemaitre
+      </a>
+      </h2>
+      <p class="lead">Ce blog est consacré au cloud computing, à l'ingénierie logielle et aux pratiques agiles.</p>      
+    </div>
+
+    <nav class="sidebar-nav">
+
+      
+
+      
+      
+        
+      
+        
+      
+        
+      
+
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Qui a besoin d'un architecte ?</h1>
+  <span class="post-date">27 Sep 2013</span>
+  <p>Dans le monde du logiciel le terme d&#39;architecte est très utilisé, mais son rôle est souvent mal défini.
+Cet article a pour objectif de le clarifier. Pour cela il
+reprend les meilleurs passages de l&#39;article de Martin Fowler : « Who Needs an Architect ?»<a href='#footnote'>[1]</a>.</p>
+
+<p>L&#39;article débute par cette phrase de David Rice : « Nous ne devrions pas faire d’entretiens avec des gens qui mettent Architecte sur leur CV»</p>
+
+<p>La raison c&#39;est que le terme d&#39; «architecte» est surchargé. 
+Pour beaucoup, il convient parfaitement au personnage content de lui-même qui contrôle les images à la fin du film ‘Matrix Reloaded’.
+Pour d&#39;autres c&#39;est un mot qu&#39;on utilise quand on veut ce qu&#39;on fait sonne «important».</p>
+
+<h1><em>Définition de l&#39;architecture.</em></h1>
+
+<p>RUP, réduisant la définition de l’IEEE, définit l’architecture comme </p>
+
+<p><em>« le plus haut niveau de concept d’un système dans son environnement. 
+L’architecture d’un système logiciel (à un moment donné dans le temps) est l’organisation ou la structure 
+des composants majeurs qui interagissent à travers des interfaces, 
+ces composants étant composés de composants et d’interfaces plus petites ».</em></p>
+
+<p>Ralph Johnson <a href='#footnote'>[2]</a> répond à cela : </p>
+
+<p><em>« J’étais un des réviseurs du standard IEEE, et j’ai inutilement argumenté que c&#39;était une définition bugée. 
+Il n’y a pas de &quot;plus haut concept d’un système&quot;. Les clients ont d’ailleurs un concept différent des développeurs
+et se moquent complètement de la structure des composants majeurs. 
+Alors, peut-être qu’une architecture est le plus haut niveau de concept que les développeurs ont d’un système dans son environnement. 
+Si nous oublions la catégorie des développeurs qui comprennent juste leur petit morceau, 
+l’architecture est alors le plus haut niveau de concept du développeur expert. 
+Qu’est-ce qui rend un composant majeur ? Il est majeur car le développeur expert le dit.</em></p>
+
+<p><em>Ainsi, une meilleure définition serait : « dans les projets qui réussissent, les développeurs experts 
+possèdent une compréhension partagée de la conception du système. 
+Cette compréhension partagée s’appelle l’architecture ».
+Cette compréhension inclut la façon dont le système est divisé en composants et comment ils interagissent à travers des interfaces. 
+Ces composants sont habituellement composés de composants plus petits, mais l’architecture inclut uniquement les composants qui sont compris 
+par tous les développeurs.»</em></p>
+
+<p><em>Ce serait une meilleure définition parce qu’il est clair que l’architecture est une construction sociale (le logiciel aussi, mais l’architecture l’est bien plus) 
+qui ne dépend pas juste du logiciel, mais  de la partie du logiciel qui est considérée comme importante par un consensus de groupe.</em></p>
+
+<p><em>Il y a un autre style de définition de l’architecture du style : « L’architecture est un ensemble de décisions de conceptions qui doivent être faite tôt 
+dans le projet ». Je me plains de celle-ci aussi en répondant que l&#39;architecture devient un ensemble de décisions que vous aimeriez être bonnes tôt dans le projet, 
+mais que vous ne prendrez  probablement pas mieux que les autres.</em></p>
+
+<p><em>Savoir si quelque chose fait partie de l’architecture est entièrement basé sur ce que le développeur pense être important. 
+Par exemple, les gens qui construisent des applications en entreprise tendent à penser que la persistance est cruciale.
+Quand ils commencent à dessiner leur architecture, ils commencent avec 3 couches. 
+Ils vont mentionner : « nous utilisons oracle pour notre base de données et nous avons notre propre couche de persistance pour mapper les objets ».
+Mais une application d’imagerie médicale pourrait inclure oracle sans faire partie de l’architecture.</em></p>
+
+<p><em>La complexité de ce type d&#39;application c&#39;est d’analyser les images pas de les stocker.</em></p>
+
+<p><em>Récupérer et stocker les images est réalisé par une petite partie de l’application et la plupart des développeurs l’ignorent.</em></p>
+
+<p><em>Il est alors difficile d&#39;expliquer comment décrire une architecture. Il faut se demander « Qu&#39;est ce qui est important ? », car
+l’architecture concerne les choses importantes. Peu importe ce que c’est.»</em></p>
+
+<h1><em>Rôle de l’architecte.</em></h1>
+
+<p>Si l’architecture représente les choses importantes, alors l’architecte est la personne (ou les personnes) qui se préoccupent des choses importantes. 
+Nous arrivons ici à la différence entre l’architecte de ‘Matrix Reloaded’ et le style d&#39;architecte qu&#39;est David Rice.</p>
+
+<p>L&#39;«Architectus Reloadus» est une personne qui prend toutes les décisions importantes. 
+L’architecte fait ça parce qu’il pense qu&#39;il ne faut qu’un seul esprit pour assurer l’intégrité d’un système.
+Peut-être parce que cet architecte pense aussi que les membre de l’équipe n’ont pas suffisamment de compétences pour prendre ces décisions. 
+Souvent, elles doivent se faire tôt pour que chacun ait un plan à suivre.</p>
+
+<p>L&#39;«Architectus Oryzus» est un animal différent <a href='#footnote'>[3]</a>. 
+Ce type d’architecte doit être très conscient ce qui se passe sur le projet, dénichant les problèmes importants et les taclant avant qu’ils ne 
+deviennent des problèmes sérieux.
+Quand je vois un architecte comme celui-là, la partie du travail la plus notable est une intense collaboration. 
+Le matin, l’architecte programme avec un développeur, essayant de récolter du code à débloqué. 
+L’après-midi, l’architecte participe à l’expression des besoins, expliquant aux utilisateurs les conséquences techniques de leurs idées 
+dans des termes non techniques (comme le cout du développement pa exemple).</p>
+
+<p>De plein de façon, l’activité la plus importante d’Architectus Oryzus est de «mentorer» l’équipe de développement  pour élever son niveau de façon 
+à ce qu’elle puisse prendre des problèmes plus complexes. 
+Améliorer les compétences d’une équipe donne à l’architecte un plus grand levier que d’être 
+le seul à décider et ainsi courir le risque d’être un goulet d’étranglement.
+Ceci conduit à la règle satisfaisante que la valeur de l’architecte est inversement proportionnelle au nombre de décisions qu’il prend.</p>
+
+<p>Le meilleur nom que l&#39;on puisse lui donner c&#39;est : un guide, comme dans l’alpinisme. 
+Un guide est un membre de l’équipe plus expérimenté et compétent. Il enseigne aux autres membres de l’équipe à mieux se débrouiller 
+par eux-mêmes tout en étant toujours là pour les choses vraiment difficiles.</p>
+
+<div class = 'footnote-list'>
+    <div id = 'footnote'>
+    <span>1: </span>
+    <a href="http://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf">« Who Needs an Architect ?»</a>, par <a href='http://martinfowler.com'>Martin fowler</a> (Juillet/Août 2003)
+
+    <br>
+    <span>2: </span>        
+    Ralph Johnson est le co-auteur du livre <a href="http://www.amazon.fr/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?ie=UTF8&qid=1392466786&sr=8-1&keywords=design+pattern">"Design Patterns: Elements of Reusable Object-Oriented Software" </a>
+
+    <br>
+    <span>3: </span>        
+    Oryzus est un mot latin qui signifie Riz en français. Riz se disant Rice en anglais, c'est un jeu de mot pour catégoriser les architectes comme David Rice.
+            
+    </div>
+</div>
+
+</div>
+
+<div>
+  <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=http://welcloud.io/cloud/2013/09/27/qui-a-besoin-d-un-architecte/%20via%20&#64;o_lemaitre"
+  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+  <!--svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg-->
+  <i class="fa fa-twitter fa-lg"></i> Twitter
+  </a>
+</div>        
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/cloud/2015/10/23/le-cloud-computing-changera-t-il-la-vie-du-programmeur/">
+            Le Cloud Computing changera-t-il la vie des programmeurs ?
+            <small>23 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/agile/2015/10/12/the-death-of-agile-l-agilite-peut-elle-survivre/">
+            "The Death of Agile". L'agilité peut-elle survivre ?
+            <small>12 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/cloud/2014/12/13/cinq-preconisations-pour-migrer-vos-applications-vers-le-cloud/">
+            Cinq préconisations pour migrer vos applications vers le cloud
+            <small>13 Dec 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68713008-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</html>

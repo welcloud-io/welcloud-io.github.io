@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!--title>
+    
+      Le Cloud Computing changera-t-il la vie des programmeurs ? &middot; welcloud.io
+    
+  </title-->
+
+  <title>welcloud.io</title>  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">  
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">  
+
+  <!-- Icons -->
+  <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png"-->
+  <!--link rel="shortcut icon" href="/public/favicon.ico"-->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <!--h1>
+        <a href="/">
+          welcloud.io
+        </a>
+      </h1--> 
+      <a href="/">      
+        <img src="/images/welcloud-logo.png">
+      </a>
+
+      <h2 style="text-align:center">
+      <a type="button" class="" href="http://twitter.com/o_lemaitre">
+        <i class="fa fa-twitter"></i> @o_lemaitre
+      </a>
+      </h2>
+      <p class="lead">Ce blog est consacré au cloud computing, à l'ingénierie logielle et aux pratiques agiles.</p>      
+    </div>
+
+    <nav class="sidebar-nav">
+
+      
+
+      
+      
+        
+      
+        
+      
+        
+      
+
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Le Cloud Computing changera-t-il la vie des programmeurs ?</h1>
+  <span class="post-date">23 Oct 2015</span>
+  <p>On pourrait penser que l’émergence du cloud computing ne devrait pas réellement avoir d’impact sur les développeurs.
+En effet, cela n’a pas d’importance que le serveur d’applications soit sur un serveur au sein de l&#39;entreprise ou dans le datacenter d&#39;un opérateur cloud. Quand les tests passent, peu importe où et comment l’application est déployée. Pourtant nous allons voir que le cloud computing va affecter de manière très significative le développement logiciel.
+Voici quelques impacts tirés du livre &quot;Cloud Computing for Programmers&quot;<a href='#footnote'>[1]</a> de Daniele Casal.</p>
+
+<h1><strong>Plus besoin d&#39;attendre</strong></h1>
+
+<p>Tout d&#39;abord grace à la virtualisation, les programmeurs n’ont pas besoin d’attendre qu’un serveur physique soit configuré ou qu’il devienne libre. 
+À la place, ils peuvent provisionner les serveurs dont ils ont besoin eux-même et rapidement.</p>
+
+<p>Ils sont alors capables de créer autant d&#39;instances que nécessaires et ainsi augmenter leur capacité à innover. Si une caractéristique ou un scénario a l’air intéressant, une équipe peut produire un environnement de développement rapidement pour coder et tester. Cette approche est très “agile” et encourage l’expérimentation.Il n’y a pas besoin d’attendre le prochain “build” ou la prochaine version comme c’est le cas quand un nombre limité de serveurs physiques sont disponibles.</p>
+
+<p>De ce fait le développeur se sentira plus efficace. Et avec le logiciel qui augmente en importance et qui tend à dominer l&#39;économie, l’efficacité du développeur deviendra bientôt un facteur déterminant pour la compétitivité de l’entreprise.</p>
+
+<h1><strong>Moins de configurations, plus de création de valeur</strong></h1>
+
+<p>Les outils de gestion du code source, d’intégration continue, d&#39;automatisation des tests, etc, existaient bien avant l’émergence du cloud. Ils suppriment beaucoup des tâches routinières des développeurs. Seulement ces outils sont souvent difficiles à configurer et à gérer au quotidien. Sur le cloud, ils sont disponibles comme des offres SaaS (Software as a Service) et sont beaucoup plus simples à configurer et à utiliser. Bien souvent, il n&#39;y rien à installer, un ordinateur et une connexion internet suffit pour démarrer.</p>
+
+<p>Pourquoi alors gaspiller du temps à configurer un outil d’intégration continue ou des serveurs, alors que vous pourriez passer ce temps à produire de la valeur en écrivant du code pour le livrer à l&#39;utilisateur ?  Voici une liste non exhaustive de services dont peut disposer un développeur dans le cloud :</p>
+
+<ul>
+<li><p>L&#39;IDE (environnements de développement intégré). Il permet aux développeurs d’éditer et coder. Avec la version SaaS c&#39;est possible depuis n’importe quel ordinateur connecté à internet. On trouve par exemple : Koding, Cloud9 IDE, Codeanywhere, Codenvy, ShiftEdit.</p></li>
+<li><p>Le contrôle de version / gestion de code source. Il permet entre autres de partager son code et de gérer les différentes versions, on trouve aujourd&#39;hui : GitHub, CloudForge, BitBucket, Mercurial, Fossil, Kiln, Jira Studio, Dev@Cloud, Code2Cloud, Google Code</p></li>
+<li><p>L&#39;intégration continue. Avec ce type de plateforme, le programmeur peut detecter les bugs plus tot dans l&#39;ensemble de l&#39;application. On trouve : TeamCity, Travis CI, Shining Panda, CircleCI, FaZend, Hosted CI.</p></li>
+<li><p>Les tests fonctionnels souvent complexes à mettre en place, peuvent etre assurés par des plateformes qui vont par exemple tester des scénarios utilisateurs sur des interfaces graphiques. Les bons exemples sont: SauceLabs, uTest, Mob4Hire.</p></li>
+<li><p>Les tests de stress/Performance. Quand une application doit supporter un fort trafic, ces plateformes vont le simuler et apporter les metrics qui permettront son optimisation. On trouve par exemple : LoadStorm, BlazeMeter, HP Load Runner in the Cloud, Neustar</p></li>
+<li><p>La collaboration. Les développeurs travaillent rarement seuls sur un produit. Pour communiquer avec les autres développeurs parfois répartis à différents endroits sur la planète, il existe des outils en ligne comme : Confluence, Green hopper, Crucible, VMware Zimbra, </p></li>
+<li><p>La supervision qui est un outil de plus en plus indispensable pour détecter, voire anticiper des bugs sur l&#39;application. On trouvera entre autres Pingdom, Monitor.us.</p></li>
+</ul>
+
+<h1><strong>Des nouveaux langages de programmation</strong></h1>
+
+<p>On constate une prolifération des nouveaux langages de programmation (Clojure, Go, Dart, Scala, F#, Ceylon, X10, etc) et certains sont en train de rapidement gagner en popularité dans la communauté des développeurs. Est-ce que le cloud a quelque chose à voir avec ça ? Oui très certainement.</p>
+
+<p>Programmer pour le cloud signifie programmer dans un environnement distribué (multimachines). Dans ces environnements le flux des programmes est parallèle, asynchrone et doit réagir aux évènements extérieurs. Les développeurs ont alors besoin de basculer du modèle de la programmation séquentielle à celui de la programmation distribuée et asynchrone. L&#39;arrivée du cloud computing force cette transformation. </p>
+
+<p>Ecrire, debugger et maintenir du code parallèle et asynchrone est très difficile. C&#39;&#39;est pour cette raison qu&#39;il existe des nouveaux outils, des bibliothèques et des nouveaux langages de programmation pour le faciliter.</p>
+
+<p>Le langage idéal pour l’air du cloud doit être orienté objet et embrasser la programmation fonctionnelle. L’avantage de la programmation orientée objet est bien connue et établie, c’est la manière dont nous comprenons et modélisons le monde. Le bénéfice de la programmation fonctionnelle quant à lui peut être résumé en une phrase : ce style de programmation permet d’écrire du code sans effet de bord, idéal pour les systèmes concurrents, hautement disponibles, critiques et distribués.</p>
+
+<p>Toutefois, les langages de programmation “purement” fonctionnels n’ont pas beaucoup de succès, parce qu’ils sont considérés comme impraticables pour le développement logiciel au quotidien. En réalité, beaucoup de langages incorporent des éléments fonctionnels sans vraiment adhérer au dogme fonctionnel dans sa forme la plus pure.
+Par exemple C# a des closures et des lambdas depuis la version 3.0 tout comme Javascript et Python. Cette approche consistant à combiner les éléments de l’orienté objet et de la programmation fonctionnelle est appelée multiparadigme. Le programmeur cloud devra donc bien connaitre les deux mondes.</p>
+
+<h1><strong>Des nouvelles architectures applicatives</strong></h1>
+
+<p>Apprendre de nouveaux langages ne suffira peut-être pas. Le fait que les applications vont changer d’échelle (scale) de manière élastique (ajouter ou enlever des machines) va changer la façon que les développeurs ont de résoudre les problèmes de programmation les plus complexes. Ils devront “grandir” acquérir les compétences nécessaires pour écrire des logiciels pour des systèmes parallèles, multi-CPU et asynchrones que le cloud apporte et sortir des architectures monolithiques. </p>
+
+<p>D&#39;un autre côté les réseaux sociaux, l&#39;internet des objets, etc feront augmenter les données de manière exponentielle. Ils devront aussi être à l’aise avec le BigData, les bases non relationnelles (NoSQL), et apprendre les plateformes de traitement distribué des données comme Hadoop.</p>
+
+<h1><strong>Adoption de la culture DevOps</strong></h1>
+
+<p>Typiquement, en particulier dans les grandes entreprises, le processus de déploiement prend beaucoup trop de temps. Quand vous avez une bureaucratie interne qui demande des signatures, vous avez de nombreuses fonctions entre le développement et les opérations qui créent une inertie. En fait, dans les grandes entreprises, le cloud computing est vu en partie comme une manière de “soudoyer” cette bureaucracie dit Rod Johnson, fondateur de SpringSource, qui a sa propre PAAS (CloudFoundry).</p>
+
+<p>Le terme “DevOps” remet en cause la séparation entre le développement du logiciel et son exploitation. D&#39;un côté les développeurs désireux d’implémenter et de livrer leur produit. D&#39;un autre côté du personnel informatique concentré pour garder le système en état de marche (“up and running”). Cette focalisation pour maintenir la disponibilité et éviter les pannes a créé des équipes opérationnelles par tradition réticente au changement. Il devient vital pour l&#39;entreprise d&#39;avoir des développeurs et des opérationnels qui travaillent ensemble dans un but commun et le cloud computing va accentuer cette vision de l&#39;organisation. A noter que certaines organisations peuvent de jamais faire la transition et auront probablement de sérieux problèmes.</p>
+
+<p>Plus de 90% des gens, dans une enquête du Forrester Research en 2012, ont dit que le cloud était la façon la plus rapide d’avoir un projet abouti et déployé.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Quand on parle de cloud computing on pense souvent aux compétences opérationnelles : machines virtuelles, réseau, disque, etc. 
+En réalité, le cloud est avant tout un outil formidable pour les programmeurs. Un outil qui leur changera la vie et qui leur permettra, moyennant quelques investissements, de créer les applications de demain. Il leur donne le pouvoir de mettre rapidement des applications en production et dimensionnables (&quot;scalables&quot;) à la demande. Ceci va mécaniquement créer de nombreuses opportunités d&#39;emploi. On peut s&#39;attendre d&#39;ailleurs à ce que, dans une entreprise orientée cloud, la demande pour des développeurs restera élevée et qu&#39;inversement un développeur orienté cloud aura certainement plus de demandes que les autres. N&#39;hésitez donc pas à vous y préparez dès maintenant.</p>
+
+<div class = 'footnote-list'>
+  <div id = 'footnote'>
+    <span>1: </span>
+      <a href="http://www.amazon.com/Cloud-Computing-Programmers-Daniele-Casal-ebook/dp/B00CH9QG8C">Cloud computing for programmers</a> de Daniele Casal
+  </div>
+</div>
+
+</div>
+
+<div>
+  <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=http://welcloud.io/cloud/2015/10/23/le-cloud-computing-changera-t-il-la-vie-du-programmeur/%20via%20&#64;o_lemaitre"
+  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+  <!--svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg-->
+  <i class="fa fa-twitter fa-lg"></i> Twitter
+  </a>
+</div>        
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/agile/2015/10/12/the-death-of-agile-l-agilite-peut-elle-survivre/">
+            "The Death of Agile". L'agilité peut-elle survivre ?
+            <small>12 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/cloud/2014/12/13/cinq-preconisations-pour-migrer-vos-applications-vers-le-cloud/">
+            Cinq préconisations pour migrer vos applications vers le cloud
+            <small>13 Dec 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/agile/2014/09/23/la-revolution-du-nuage-informatique/">
+            La révolution du nuage informatique
+            <small>23 Sep 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68713008-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</html>
