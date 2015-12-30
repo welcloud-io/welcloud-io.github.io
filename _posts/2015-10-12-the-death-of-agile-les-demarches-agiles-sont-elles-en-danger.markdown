@@ -1,6 +1,6 @@
 ---
 layout: post
-title : "\"The Death of Agile\" : l'agilité est elle en danger ?"
+title : "\"The Death of Agile\" : les démarches agiles sont-elles en danger ?"
 author: Olivier Lemaitre
 categories: Agile
 ---
