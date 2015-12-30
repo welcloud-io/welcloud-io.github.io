@@ -2,7 +2,7 @@
 layout: post
 title : Qui a besoin d'un architecte ?
 author: Olivier Lemaitre
-categories: Cloud
+categories: Agile
 ---
 
 Dans le monde du logiciel le terme d'architecte est très utilisé, mais son rôle est souvent mal défini.

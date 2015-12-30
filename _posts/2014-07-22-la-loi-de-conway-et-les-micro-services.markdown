@@ -2,7 +2,7 @@
 layout: post
 title : La loi de Conway et les Micro-Services
 author: Olivier Lemaitre
-categories: Agile
+categories: Ingineering
 ---
 
 Il y a des évènements dans l’année que l’on attend avec plus d’impatience que d’autres. 
