@@ -5,7 +5,7 @@ author: Olivier Lemaitre
 categories: Ingenieirie
 ---
 
-Même si l'article de Jack Reeve "What is software design ?"<a href='#footnote'>[1]</a> date de 1992, il donne d'impression davoir été écrit il y a quelques semaines. 
+Même si l'article de Jack Reeve "What is software design ?"<a href='#footnote'>[1]</a> date de 1992, il donne d'impression d'avoir été écrit il y a quelques semaines. 
 A cette époque c'était l'explosion des langages orientés objet (en particulier le C++) et pour expliquer ce succès l'auteur fait une hypothèse.
 Celle-ci va énormément influencer les démarches agiles ainsi que les ingénieurs logiciels qui les utilisent.
 
