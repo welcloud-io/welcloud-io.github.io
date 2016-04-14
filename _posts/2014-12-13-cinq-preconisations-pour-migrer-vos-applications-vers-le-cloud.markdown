@@ -25,9 +25,9 @@ le bas il doit être architecturé avec un couplage lâche. Ainsi les "services 
 Ceci favorise l'utilisation des principes REST et en particulier l'utilisation des services hypermédia qui stockent l'état 
 de l'application côté client plutôt que côté serveur.
 
-Assurez-vous donc que les architectes ont une bonne compréhension des différences entre les principes d’une conception de services 
-avec état (statefull) et sans état (stateless). Apprenez aussi à identifier si une application peut être migrée vers le nuage ou 
-si une meilleure option ne serait plutôt l’hébergement ou la réécriture.
+Assurez-vous donc que les architectes ont une bonne compréhension des différences entre des services 
+avec état (statefull) et sans état (stateless). Pour certaines applications, l’hébergement ou la réécriture et parfois une meilleure option 
+que le déplacement vers le nuage. Apprenez à les identifier.
 
 Un autre point souvent méconnu, les architectures cloud reposent sur des transactions 
 BASE (Basically Available, Soft State, Eventually Consistent - Basiquement Disponible, Etat Souple, Finalement cohérent) par opposition aux transactions 
@@ -38,29 +38,33 @@ si son application est simplement portée sur le cloud sans adresser ce problèm
 
 #2 - Mettez la sécurité au coeur des applications
 
-Les opérateurs du nuage informatique fournissent typiquement un haut niveau de sécurité sur leur périmètre. Néanmoins, il revient à l’entreprise utilisatrice de construire le niveau approprié de sécurité pour ses applications. 
+Les opérateurs du nuage informatique fournissent typiquement un haut niveau de sécurité sur leur périmètre. 
+Néanmoins, il revient à l’entreprise utilisatrice de construire le niveau approprié de sécurité pour ses applications. 
 
-Par exemple, une fournisseur d’Infrastructure as a Service (IaaS) comme Amazon Web Service (AWS) possède des datacenter avec une sécurité de classe internationale, 
-des livres blancs sur comment construire des services très sécurisés sur sa plateforme, et des interfaces programmatiques (API) qui facilitent la conception 
-pour la sécurité. Toutefois, c’est à l’architecte qui construit le logiciel sur AWS de chiffrer les données, gérer les clés, 
+Par exemple, une fournisseur d’Infrastructure as a Service (IaaS) comme Amazon Web Service (AWS) possède des datacenters 
+avec une sécurité de classe internationale, des livres blancs sur comment construire des services très sécurisés sur sa plateforme, 
+et des interfaces programmatiques (API) qui facilitent la conception pour la sécurité. 
+Toutefois, c’est à l’architecte qui construit le logiciel sur AWS de chiffrer les données, gérer les clés, 
 implémenter la bonne politique pour les mots de passe, etc.
 
-Commencez par vous assurer que les architectes, l’équipe produit, et les professionnels de la sécurité ont une large compréhension de la sécurité dans le cloud. 
-Si nécessaire, faire appel à un tiers indépendant pour procéder à une évaluation et effectuer des vérifications avant et après le déploiement.  
+Commencez par vous assurer que les architectes, l’équipe produit, et les professionnels de la sécurité ont une large compréhension de la sécurité 
+dans le cloud. Si nécessaire, faire appel à un tiers indépendant pour procéder à une évaluation et effectuer des vérifications avant et après le déploiement.  
 
 Il y a un mythe commun, celui que les données critiques ne peuvent pas être en sécurité dans le cloud. 
-La réalité c’est que la sécurité doit être architecturée dans le système quel que soit l’endroit où les données résident.
+La réalité c’est que la sécurité doit être architecturée dans le système, que les données soient dans le cloud ou ailleurs.
 
 
 #3 - Criptez vos données
 
-Même si l'application est sécurisée, on craint souvent le Patriot Act.Ce dernier permet aux Américains, en cas de soupçon de terrorisme, 
+Même si l'application est sécurisée, on craint souvent le Patriot Act. Ce dernier permet aux Américains, en cas de soupçon de terrorisme, 
 d'avoir accès aux données qui se trouvent dans les datacenters des entreprises américaines partout dans le monde et ce sans prévenir leur propriétaire.
 
 Toutefois, si une société crypte ses données, le gouvernement devra demander à l’entreprise de les décrypter pour les inspecter. 
-Crypter ses données est le meilleur moyen pour réduire le risque qu'on vous les demande et invalide complètement le mythe que les données critiques ne peuvent pas vivre dans le nuage.
+Crypter ses données est le meilleur moyen pour réduire le risque qu'on vous les demande et invalide complètement le mythe que les données 
+critiques ne peuvent pas vivre dans le nuage.
 
-L’encryptage est donc le meilleur moyen pour se protéger du patriot act et des autres politiques de surveillance gouvernementales présentent dans beaucoup de pays.
+L’encryptage est donc le meilleur moyen pour se protéger du patriot act et des autres politiques de surveillance gouvernementales présentent 
+dans beaucoup de pays.
     
 #4 - Ne surestimez pas votre propre SLA (Service Level Agreement)
 
@@ -71,7 +75,7 @@ les consommateurs parient qu’ils peuvent fournir des meilleurs SLA que les fou
 
 Sachez que, même s'il arrive que les datacenters des fournisseurs de cloud comme Amazon connaissent des pannes, elles sont très rares. 
 De plus, ces pannes sont arrivées jusqu'à présent dans une unique zone de disponibilité. 
-Ainsi, les entreprises qui ont construit leurs applications avec une redondance sur de multiples zones ont été capables de rester disponible.
+Ainsi, les entreprises qui ont construit leurs applications avec une redondance sur de multiples zones sont restées disponibles.
 
 
 #5 - Ne négligez pas les besoins métier
