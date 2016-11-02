@@ -11,11 +11,9 @@ Pour comprendre dans quelle direction, nous nous appuierons sur les textes fonda
 de Jack Reeves et Martin Fowler ainsi que des modèles d’organisation 
 comme celui d’Amazon et Spotify.
 
-## Qu'est ce qui change pour les développeurs et les concepteurs en milieu agile ?
+## Qu'est ce qui change pour les développeurs et les concepteurs ?
 
-### Qu’est ce que la Conception Logicielle ?
-
-Qu'est-ce que la conception logicielle ? la réponse a déjà été apportée en 1992 dans 
+Avant tout, qu'est-ce que la conception logicielle ? la réponse a déjà été apportée en 1992 dans 
 un article <a href='#footnote'>[1]</a> qui influencera énormément les méthodes agiles 
 par la suite et qui est toujours très actuel.
 Jack Reeves y fait la comparaison entre le métier de l’ingénieur dans une discipline 
@@ -265,11 +263,10 @@ C'est lui qui peut créer et adapter le logiciel pour qu'il s'adapte aux besoins
 Son rôle est donc tout simplement revalorisé.
 Chez google d'ailleurs ce sont les ingénieurs logiciels séniors qui ont le plus haut salaire loin devant les managers !
 
-## Qu'est ce qui change pour les architectes en milieu agile ?
+## Qu'est ce qui change pour les architectes ?
 
-### Qu’est ce que l'architecture Logicielle ?
-
-Le terme d’architecture est très difficile à définir clairement. 
+Essayons d'abord de définir le terme d’architecture. 
+C'est d'ailleurs un terme très difficile à définir clairement. 
 C’est sûrement dû au fait qu’il y a plusieurs connotations derrière ce terme.
 
 Commençons par reprendre la définition de l'architecture dans le bâtiment, puisque le terme vient de là. 
@@ -501,6 +498,18 @@ Il doit aussi faire en sorte que les décisions
 les plus difficiles à changer (les décisions d'architecture)
 deviennent des décisions faciles à changer ou 
 en tout cas des décisions qui seront prises au moment où il y a assez d'informations pour le faire.
+
+## conclusion générale
+
+L'agilité est synonyme de changement. 
+Changement dans les cultures d'entreprise, changement dans les pratiques professionnelles.
+C'est très certainement plus facile à mettre en place dans une jeune entreprise 
+qui vient de naitre que dans une organisation qui existe depuis plusieurs dizaines d'années et qui considère
+les métiers du logiciel comme secondaires.
+Il faut néanmoins garder à l'esprit que comme l'a titré le magazine américain Forbes en 2011, 
+maintenant toutes les entreprises sont des entreprises logicielles. Autrement dit, 
+les leaders de demain seront des entreprises qui mettent le logiciel 
+(et donc les métiers qui vont avec) au coeur de leur stratégie.
 
 <div class = 'footnote-list'>
   <div id = 'footnote'>
