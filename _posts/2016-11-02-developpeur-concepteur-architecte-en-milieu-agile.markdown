@@ -2,7 +2,7 @@
 layout: post
 title : Développeur, Concepteur, Architecte en milieu Agile. Qu'est-ce qui change ? Et pourquoi ?
 author: Olivier Lemaitre
-categories: Ingenierie
+categories: Agile
 ---
 
 Quel rôle pour le développeur, le concepteur ou encore l’architecte dans un environnement “Agile” ? 
